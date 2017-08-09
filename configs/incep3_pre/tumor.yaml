@@ -1,0 +1,50 @@
+
+IMAGE_FOLDER : "/input"
+
+TEST_FOLDER : "/test_tiles"
+
+LABEL_FOLDER :  "Clinical.txt"
+
+CLASS_TYPE : "Tumor"
+
+MAX_IMG_SIZE : (299, 299)
+
+SPLIT : [60, 20, 20]
+
+PRETRAIN : True
+
+LEARNING_RATE : 0.006
+
+L2_REG : 0.0003
+
+MAX_EPOCH : 24
+
+RANDOM_TRAIN : False
+
+LABEL_2_ID : {"T1": 0, "T2": 1, "T3": 2,
+              "T4": 3}
+
+PURE_LABELS : {"T1": 0, "T2": 1, "T3": 2, "T4": 3}
+
+NUM_LABELS : 4
+
+MODEL_SAVE_FILE : "results/incep3_pre/tumor/save.m"
+
+TRAIN_TILL_EPOCH : 7
+
+NUM_WORKERS : 27
+
+BATCH_SIZE : 64
+
+DEVICE_IDS : [0, 1]
+
+INIT_RANDOMIZE : True
+
+TEST_RESULT_FILE : "results/incep3_pre/tumor/test_results.txt"
+
+DEV_RESULT_FILE : "results/incep3_pre/tumor/dev_results.txt"
+
+TRAIN_RESULT_FILE : "results/incep3_pre/tumor/train_results.txt"
+
+ULTI_RESULT_FILE : "results/incep3_pre/tumor/ulti_results.txt"
+

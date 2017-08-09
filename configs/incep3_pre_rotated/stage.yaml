@@ -1,0 +1,51 @@
+
+IMAGE_FOLDER : "/input"
+
+TEST_FOLDER : "/test_tiles"
+
+LABEL_FOLDER :  "Clinical.txt"
+
+CLASS_TYPE : "AJCC Stage"
+
+MAX_IMG_SIZE : (299, 299)
+
+SPLIT : [60, 20, 20]
+
+PRETRAIN : True
+
+LEARNING_RATE : 0.006
+
+L2_REG : 0.0003
+
+MAX_EPOCH : 24
+
+RANDOM_TRAIN : False
+
+LABEL_2_ID : {"Stage I": 0, "Stage IA": 0, "Stage IB": 0,
+              "Stage II": 1, "Stage IIA": 1, "Stage IIB": 1,
+              "Stage III": 2, "Stage IIIA": 2, "Stage IIIB": 2, "Stage IIIC": 2,
+              "Stage IV": 3}
+
+PURE_LABELS : {"Stage I": 0, "Stage II": 1, "Stage III": 2, "Stage IV": 3}
+
+NUM_LABELS : 4
+
+MODEL_SAVE_FILE : "results/incep3_pre_rotated/stage/save.m"
+
+TRAIN_TILL_EPOCH : 7
+
+NUM_WORKERS : 27
+
+BATCH_SIZE : 64
+
+DEVICE_IDS : [0, 1]
+
+INIT_RANDOMIZE : True
+
+TEST_RESULT_FILE : "results/incep3_pre_rotated/stage/test_results.txt"
+
+DEV_RESULT_FILE : "results/incep3_pre_rotated/stage/dev_results.txt"
+
+TRAIN_RESULT_FILE : "results/incep3_pre_rotated/stage/train_results.txt"
+
+ULTI_RESULT_FILE : "results/incep3_pre_rotated/stage/ulti_results.txt"

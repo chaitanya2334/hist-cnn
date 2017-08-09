@@ -1,0 +1,51 @@
+
+IMAGE_FOLDER : "/input"
+
+TEST_FOLDER : "/test_tiles"
+
+LABEL_FOLDER :  "Clinical.txt"
+
+CLASS_TYPE : "PAM50 mRNA"
+
+MAX_IMG_SIZE : (299, 299)
+
+SPLIT : [60, 20, 20]
+
+PRETRAIN : True
+
+LEARNING_RATE : 0.006
+
+L2_REG : 0.0003
+
+MAX_EPOCH : 24
+
+RANDOM_TRAIN : False
+
+LABEL_2_ID : {"Basal-like": 0, "HER2-enriched": 1, "Luminal A": 2,
+              "Luminal B": 3, "Normal-like": 4, "NA": 4}
+
+PURE_LABELS : {"Basal-like": 0, "HER2-enriched": 1, "Luminal A": 2,
+              "Luminal B": 3, "Unknown": 4}
+
+NUM_LABELS : 5
+
+MODEL_SAVE_FILE : "results/incep3_pre_rotated/pam50/save.m"
+
+TRAIN_TILL_EPOCH : 7
+
+NUM_WORKERS : 27
+
+BATCH_SIZE : 64
+
+DEVICE_IDS : [0, 1]
+
+INIT_RANDOMIZE : True
+
+TEST_RESULT_FILE : "results/incep3_pre_rotated/pam50/test_results.txt"
+
+DEV_RESULT_FILE : "results/incep3_pre_rotated/pam50/dev_results.txt"
+
+TRAIN_RESULT_FILE : "results/incep3_pre_rotated/pam50/train_results.txt"
+
+ULTI_RESULT_FILE : "results/incep3_pre_rotated/pam50/ulti_results.txt"
+

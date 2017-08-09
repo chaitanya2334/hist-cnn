@@ -1,1 +1,1 @@
-# hist-cnn
+# hist-net

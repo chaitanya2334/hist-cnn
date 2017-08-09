@@ -1,0 +1,49 @@
+
+IMAGE_FOLDER : "/input"
+
+TEST_FOLDER : "/test_tiles"
+
+LABEL_FOLDER :  "Clinical.txt"
+
+CLASS_TYPE : "ER Status"
+
+MAX_IMG_SIZE : (299, 299)
+
+SPLIT : [60, 20, 20]
+
+PRETRAIN : True
+
+LEARNING_RATE : 0.006
+
+L2_REG : 0.0003
+
+MAX_EPOCH : 24
+
+RANDOM_TRAIN : False
+
+LABEL_2_ID : {"Positive": 0, "Negative": 1, "Not Performed": 2,
+              "Indeterminate": 2, "Performed but Not Available": 2}
+
+PURE_LABELS : {"Positive": 0, "Negative": 1, "Unknown": 2}
+
+NUM_LABELS : 3
+
+MODEL_SAVE_FILE : "results/incep3_pre_rotated/er_status/save.m"
+
+TRAIN_TILL_EPOCH : 7
+
+NUM_WORKERS : 27
+
+BATCH_SIZE : 64
+
+DEVICE_IDS : [0, 1]
+
+INIT_RANDOMIZE : True
+
+TEST_RESULT_FILE : "results/incep3_pre_rotated/er_status/test_results.txt"
+
+DEV_RESULT_FILE : "results/incep3_pre_rotated/er_status/dev_results.txt"
+
+TRAIN_RESULT_FILE : "results/incep3_pre_rotated/er_status/train_results.txt"
+
+ULTI_RESULT_FILE : "results/incep3_pre_rotated/er_status/ulti_results.txt"
